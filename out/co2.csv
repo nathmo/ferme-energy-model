@@ -1,0 +1,11 @@
+scenario,kg_per_year_now,t_use_50y,t_equipment_50y,t_total_50y
+A do nothing,264,13.2,0.0,13.2
+O oil boiler,23721,1107.86,2.7,1110.56
+B electric,1373,64.5,0.0,64.5
+C wood only,1362,64.14,0.0,64.14
+C2 wood+electric,1373,64.5,0.0,64.5
+P pellet boiler,2528,118.03,4.2,122.23
+D +solar thermal,1266,59.18,0.0,59.18
+E heat pump,668,31.56,9.62,41.18
+F PV SSW pan,422,19.34,50.12,69.46
+F2 PV both pans,340,15.25,101.88,117.13

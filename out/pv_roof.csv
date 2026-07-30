@@ -1,0 +1,14 @@
+month,ssw_pan_kwh_day,both_pans_kwh_day
+Jan,17.4,35.5
+Feb,30.9,57.9
+Mar,49.0,100.6
+Apr,95.7,204.9
+May,94.8,236.0
+Jun,93.9,250.0
+Jul,89.0,229.2
+Aug,83.6,199.4
+Sep,69.7,146.5
+Oct,28.7,63.1
+Nov,20.7,41.2
+Dec,19.2,35.2
+year_total_kwh,21101,48765
