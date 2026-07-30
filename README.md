@@ -4,14 +4,9 @@ Hourly thermal model of a **stone farmhouse ("ferme") in Saint-Légier, Vaud,
 Switzerland** — real footprint, real roof geometry, real terrain horizon, and
 climate data for the site.
 
-Adapted from [zinal-chalet-model](https://github.com/nathmo/zinal-chalet-model),
-which modelled a timber chalet at 1680 m in Valais. Almost every number changed,
-and several of the *conclusions* invert — see [What changed](#what-changed-vs-the-chalet).
+Find the interractive dashboard on streamlit :
+https://ferme-energy-model.streamlit.app/
 
-> **This is a specific building, not an archetype.** Unlike the chalet version,
-> the geometry here is measured rather than assumed — off the cadastral survey
-> and the federal solar cadastre. The address and register identifiers are
-> deliberately left out; the site coordinates live in [model.py](model.py).
 
 | register | value |
 |---|---|
@@ -357,19 +352,6 @@ streamlit run app.py
 - [`HAZARDS.md`](HAZARDS.md) — natural hazard assessment at the exact building
 
 Run: `python simulate.py && python make_plots.py && python render3d.py`
-
-## What changed vs the chalet
-
-| | Zinal chalet | Ferme, Saint-Légier |
-|---|---|---|
-| H | 115 W/K | **1085 W/K** (9×) |
-| dominant loss | walls 30 %, spread across five elements | **walls 64 %** |
-| thermal mass | 4 kWh/K, τ 35 h | **50 kWh/K, τ 46 h** |
-| occupancy | 74 days/yr, frost guard | **344 days/yr, 16 °C setback** |
-| horizon | mountains to 29° | open, 16.8° |
-| the problem | pipes freezing in an empty house | **31 t CO₂/yr and a 15 000 CHF oil bill** |
-| does insulation pay? | no — century-long payback | **yes — roughly a decade** |
-| does PV+battery pay in carbon? | no | still no (but it pays in money) |
 
 ## Main modeling assumptions to keep in mind
 
